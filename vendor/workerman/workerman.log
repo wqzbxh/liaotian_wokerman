@@ -1,0 +1,11 @@
+2023-04-09 17:04:23 pid:1 ArgumentCountError: Too few arguments to function app\ExtraExpand\Server\{closure}(), 2 passed in E:\MINE\chat_wokerman\vendor\workerman\workerman\Connection\TcpConnection.php on line 658 and exactly 3 expected in E:\MINE\chat_wokerman\app\ExtraExpand\Server\WokermanSocket.php:25
+Stack trace:
+#0 E:\MINE\chat_wokerman\vendor\workerman\workerman\Connection\TcpConnection.php(658): app\ExtraExpand\Server\{closure}(Object(Workerman\Connection\TcpConnection), '12314')
+#1 E:\MINE\chat_wokerman\vendor\workerman\workerman\Events\Select.php(292): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 E:\MINE\chat_wokerman\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\Select->loop()
+#3 E:\MINE\chat_wokerman\vendor\workerman\workerman\Worker.php(1404): Workerman\Worker->run()
+#4 E:\MINE\chat_wokerman\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#5 E:\MINE\chat_wokerman\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#6 E:\MINE\chat_wokerman\app\ExtraExpand\Server\WokermanSocket.php(37): Workerman\Worker::runAll()
+#7 {main}
+2023-04-09 17:04:23 pid:1 Worker process terminated
